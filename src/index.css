@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #070709;
+    color: #f5f2eb;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+  }
+
+  #root {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    text-align: left !important;
+  }
+}
+
+/* Custom luxury gold text gradients */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #f7e2a9 0%, #d4af37 40%, #aa7c11 75%, #f5db8b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gold-light {
+  background: linear-gradient(135deg, #fff2cc 0%, #e2c070 50%, #c49635 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-silver-gradient {
+  background: linear-gradient(135deg, #ffffff 0%, #dcdde1 50%, #8f92a1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Luxury Card Borders & Glows */
+.gold-card {
+  background: rgba(18, 18, 26, 0.75);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(212, 175, 55, 0.18);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.gold-card:hover {
+  border-color: rgba(212, 175, 55, 0.5);
+  box-shadow: 0 10px 30px -10px rgba(212, 175, 55, 0.25);
+  transform: translateY(-4px);
+}
+
+/* Custom Gold Button */
+.btn-gold {
+  position: relative;
+  background: linear-gradient(135deg, #dfb743 0%, #c49635 50%, #9e751b 100%);
+  color: #070709;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.btn-gold:hover {
+  background: linear-gradient(135deg, #ebd171 0%, #d4af37 50%, #b28624 100%);
+  box-shadow: 0 0 25px rgba(212, 175, 55, 0.45);
+  transform: translateY(-2px);
+}
+
+.btn-gold-outline {
+  position: relative;
+  background: transparent;
+  border: 1px solid rgba(212, 175, 55, 0.6);
+  color: #f7e2a9;
+  letter-spacing: 0.05em;
+  transition: all 0.3s ease;
+}
+
+.btn-gold-outline:hover {
+  background: rgba(212, 175, 55, 0.12);
+  border-color: #dfb743;
+  color: #ffffff;
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.25);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #070709;
+}
+::-webkit-scrollbar-thumb {
+  background: #2a2820;
+  border-radius: 4px;
+  border: 1px solid rgba(212, 175, 55, 0.2);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #a07820;
+}
